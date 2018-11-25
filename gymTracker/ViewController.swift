@@ -12,9 +12,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let mgr = MeasurableManager()
+//        _ = mgr.createMeasureable(name: "Height");
+        
+        let weight = mgr.fetchMeasurableBy(name: "Height");
+        print(weight[0].name);
     }
-
-
 }
 

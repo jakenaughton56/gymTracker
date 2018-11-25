@@ -15,6 +15,14 @@
 		2B05A41821A2C445009BB1BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B05A41621A2C445009BB1BB /* LaunchScreen.storyboard */; };
 		2B05A42321A2C445009BB1BB /* gymTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B05A42221A2C445009BB1BB /* gymTrackerTests.swift */; };
 		2B05A42E21A2C445009BB1BB /* gymTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B05A42D21A2C445009BB1BB /* gymTrackerUITests.swift */; };
+		2B05A44221A2C580009BB1BB /* ExerciseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B05A44121A2C580009BB1BB /* ExerciseManager.swift */; };
+		2B05A44421A2C5FE009BB1BB /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B05A44321A2C5FE009BB1BB /* PersistenceManager.swift */; };
+		2B05A44E21AA2C3D009BB1BB /* MeasurableManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B05A44D21AA2C3D009BB1BB /* MeasurableManager.swift */; };
+		2B05A45121AA30AE009BB1BB /* MeasurableMO+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B05A44F21AA30AE009BB1BB /* MeasurableMO+CoreDataClass.swift */; };
+		2B05A45221AA30AE009BB1BB /* MeasurableMO+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B05A45021AA30AE009BB1BB /* MeasurableMO+CoreDataProperties.swift */; };
+		2B05A45521AA3302009BB1BB /* ExerciseMO+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B05A45321AA3302009BB1BB /* ExerciseMO+CoreDataClass.swift */; };
+		2B05A45621AA3302009BB1BB /* ExerciseMO+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B05A45421AA3302009BB1BB /* ExerciseMO+CoreDataProperties.swift */; };
+		2B05A45921AA360C009BB1BB /* Measurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B05A45821AA360C009BB1BB /* Measurable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,14 @@
 		2B05A42921A2C445009BB1BB /* gymTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gymTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B05A42D21A2C445009BB1BB /* gymTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gymTrackerUITests.swift; sourceTree = "<group>"; };
 		2B05A42F21A2C445009BB1BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B05A44121A2C580009BB1BB /* ExerciseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseManager.swift; sourceTree = "<group>"; };
+		2B05A44321A2C5FE009BB1BB /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		2B05A44D21AA2C3D009BB1BB /* MeasurableManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurableManager.swift; sourceTree = "<group>"; };
+		2B05A44F21AA30AE009BB1BB /* MeasurableMO+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeasurableMO+CoreDataClass.swift"; sourceTree = "<group>"; };
+		2B05A45021AA30AE009BB1BB /* MeasurableMO+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeasurableMO+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2B05A45321AA3302009BB1BB /* ExerciseMO+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExerciseMO+CoreDataClass.swift"; sourceTree = "<group>"; };
+		2B05A45421AA3302009BB1BB /* ExerciseMO+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExerciseMO+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2B05A45821AA360C009BB1BB /* Measurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Measurable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +115,9 @@
 		2B05A40921A2C444009BB1BB /* gymTracker */ = {
 			isa = PBXGroup;
 			children = (
+				2B05A45721AA35B9009BB1BB /* Structs */,
+				2B05A44021A2C558009BB1BB /* Manager */,
+				2B05A43B21A2C45E009BB1BB /* CoreDataFiles */,
 				2B05A40A21A2C444009BB1BB /* AppDelegate.swift */,
 				2B05A40C21A2C444009BB1BB /* ViewController.swift */,
 				2B05A40E21A2C444009BB1BB /* Main.storyboard */,
@@ -126,6 +145,35 @@
 				2B05A42F21A2C445009BB1BB /* Info.plist */,
 			);
 			path = gymTrackerUITests;
+			sourceTree = "<group>";
+		};
+		2B05A43B21A2C45E009BB1BB /* CoreDataFiles */ = {
+			isa = PBXGroup;
+			children = (
+				2B05A45321AA3302009BB1BB /* ExerciseMO+CoreDataClass.swift */,
+				2B05A45421AA3302009BB1BB /* ExerciseMO+CoreDataProperties.swift */,
+				2B05A44F21AA30AE009BB1BB /* MeasurableMO+CoreDataClass.swift */,
+				2B05A45021AA30AE009BB1BB /* MeasurableMO+CoreDataProperties.swift */,
+			);
+			path = CoreDataFiles;
+			sourceTree = "<group>";
+		};
+		2B05A44021A2C558009BB1BB /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				2B05A44121A2C580009BB1BB /* ExerciseManager.swift */,
+				2B05A44321A2C5FE009BB1BB /* PersistenceManager.swift */,
+				2B05A44D21AA2C3D009BB1BB /* MeasurableManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		2B05A45721AA35B9009BB1BB /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				2B05A45821AA360C009BB1BB /* Measurable.swift */,
+			);
+			path = Structs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +308,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B05A40D21A2C444009BB1BB /* ViewController.swift in Sources */,
+				2B05A44421A2C5FE009BB1BB /* PersistenceManager.swift in Sources */,
+				2B05A45921AA360C009BB1BB /* Measurable.swift in Sources */,
+				2B05A45221AA30AE009BB1BB /* MeasurableMO+CoreDataProperties.swift in Sources */,
+				2B05A45121AA30AE009BB1BB /* MeasurableMO+CoreDataClass.swift in Sources */,
+				2B05A45521AA3302009BB1BB /* ExerciseMO+CoreDataClass.swift in Sources */,
+				2B05A45621AA3302009BB1BB /* ExerciseMO+CoreDataProperties.swift in Sources */,
 				2B05A41321A2C444009BB1BB /* gymTracker.xcdatamodeld in Sources */,
+				2B05A44E21AA2C3D009BB1BB /* MeasurableManager.swift in Sources */,
+				2B05A44221A2C580009BB1BB /* ExerciseManager.swift in Sources */,
 				2B05A40B21A2C444009BB1BB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
