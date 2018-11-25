@@ -4,10 +4,11 @@
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <entity name="Measurable" representedClassName=".MeasurableMO" syncable="YES">
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
         <element name="Exercise" positionX="-63" positionY="-18" width="128" height="60"/>
-        <element name="Measurable" positionX="-54" positionY="0" width="128" height="60"/>
+        <element name="Measurable" positionX="-54" positionY="0" width="128" height="75"/>
     </elements>
 </model>

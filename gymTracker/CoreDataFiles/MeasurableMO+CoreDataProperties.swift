@@ -17,6 +17,6 @@ extension MeasurableMO {
         return NSFetchRequest<MeasurableMO>(entityName: "Measurable")
     }
 
+    @NSManaged public var id: UUID
     @NSManaged public var name: String?
-
 }

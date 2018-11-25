@@ -14,10 +14,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         let mgr = MeasurableManager()
-//        _ = mgr.createMeasureable(name: "Height");
+        let measurable = mgr.create(name: "HeightThree");
+        let heightTwo = mgr.fetchBy(measurable.id)
+        print(heightTwo[0].name)
         
-        let weight = mgr.fetchMeasurableBy(name: "Height");
-        print(weight[0].name);
+//        let weight = mgr.fetchMeasurableBy(name: "Weight");
+//        print(weight[0].name);
     }
 }
 

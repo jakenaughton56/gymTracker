@@ -17,17 +17,26 @@ class MeasurableManager {
         self.persistenceManager = PersistenceManager.shared
     }
     
-    func createMeasurable(name: String) -> MeasurableStruct {
+    func create(name: String) -> MeasurableStruct {
         let measurableMO = MeasurableMO(context: persistenceManager.context)
+        measurableMO.id = UUID.init()
         measurableMO.name = name
         self.save()
         return MeasurableStruct(measurableMO)
     }
     
-    func fetchMeasurableBy(name: String) -> [MeasurableStruct] {
+    func fetchBy(_ name: String) -> [MeasurableStruct] {
         let measurables = persistenceManager.fetch(MeasurableMO.self, predicate: NSPredicate(format: "name = %@", name))
         if measurables.count == 0 {
             fatalError("No Measurable exists with that name")
+        }
+        return self.convertModelArrayToStructArray(measurables)
+    }
+    
+    func fetchBy(_ id: UUID) -> [MeasurableStruct] {
+        let measurables = persistenceManager.fetch(MeasurableMO.self, predicate: NSPredicate(format: "id = %@", id as CVarArg))
+        if measurables.count == 0 {
+            fatalError("No Measurable exists with that id")
         }
         return self.convertModelArrayToStructArray(measurables)
     }

@@ -10,10 +10,12 @@ import Foundation
 
 struct MeasurableStruct {
     init(_ measurableMO: MeasurableMO) {
+        self.id = measurableMO.id
         guard let name = measurableMO.name else {
             fatalError("No MeasureableMO name was passed in.");
         }
         self.name = name
     }
+    let id: UUID
     var name: String
 }
