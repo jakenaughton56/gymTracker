@@ -7,8 +7,14 @@
         <attribute name="id" attributeType="UUID" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
+    <entity name="Measurement" representedClassName=".MeasurementMO" syncable="YES">
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="measurableId" attributeType="UUID" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <elements>
         <element name="Exercise" positionX="-63" positionY="-18" width="128" height="60"/>
         <element name="Measurable" positionX="-54" positionY="0" width="128" height="75"/>
+        <element name="Measurement" positionX="-36" positionY="27" width="128" height="90"/>
     </elements>
 </model>

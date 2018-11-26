@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2B05A40B21A2C444009BB1BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B05A40A21A2C444009BB1BB /* AppDelegate.swift */; };
-		2B05A40D21A2C444009BB1BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B05A40C21A2C444009BB1BB /* ViewController.swift */; };
-		2B05A41021A2C444009BB1BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B05A40E21A2C444009BB1BB /* Main.storyboard */; };
+		2B05A41021A2C444009BB1BB /* Measurable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B05A40E21A2C444009BB1BB /* Measurable.storyboard */; };
 		2B05A41321A2C444009BB1BB /* gymTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2B05A41121A2C444009BB1BB /* gymTracker.xcdatamodeld */; };
 		2B05A41521A2C445009BB1BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B05A41421A2C445009BB1BB /* Assets.xcassets */; };
 		2B05A41821A2C445009BB1BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B05A41621A2C445009BB1BB /* LaunchScreen.storyboard */; };
@@ -23,6 +22,9 @@
 		2B05A45921AA360C009BB1BB /* Measurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B05A45821AA360C009BB1BB /* Measurable.swift */; };
 		2B05A45C21AA6656009BB1BB /* MeasurableMO+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B05A45A21AA6656009BB1BB /* MeasurableMO+CoreDataClass.swift */; };
 		2B05A45D21AA6656009BB1BB /* MeasurableMO+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B05A45B21AA6656009BB1BB /* MeasurableMO+CoreDataProperties.swift */; };
+		2B05A46B21AC0B13009BB1BB /* MeasurementMO+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B05A46921AC0B13009BB1BB /* MeasurementMO+CoreDataClass.swift */; };
+		2B05A46C21AC0B13009BB1BB /* MeasurementMO+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B05A46A21AC0B13009BB1BB /* MeasurementMO+CoreDataProperties.swift */; };
+		2B05A46E21AC0EBD009BB1BB /* MeasurableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B05A46D21AC0EBD009BB1BB /* MeasurableController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +47,7 @@
 /* Begin PBXFileReference section */
 		2B05A40721A2C444009BB1BB /* gymTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gymTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B05A40A21A2C444009BB1BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2B05A40C21A2C444009BB1BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2B05A40F21A2C444009BB1BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2B05A40F21A2C444009BB1BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Measurable.storyboard; sourceTree = "<group>"; };
 		2B05A41221A2C444009BB1BB /* gymTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = gymTracker.xcdatamodel; sourceTree = "<group>"; };
 		2B05A41421A2C445009BB1BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B05A41721A2C445009BB1BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -65,6 +66,9 @@
 		2B05A45821AA360C009BB1BB /* Measurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Measurable.swift; sourceTree = "<group>"; };
 		2B05A45A21AA6656009BB1BB /* MeasurableMO+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeasurableMO+CoreDataClass.swift"; sourceTree = "<group>"; };
 		2B05A45B21AA6656009BB1BB /* MeasurableMO+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeasurableMO+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2B05A46921AC0B13009BB1BB /* MeasurementMO+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeasurementMO+CoreDataClass.swift"; sourceTree = "<group>"; };
+		2B05A46A21AC0B13009BB1BB /* MeasurementMO+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeasurementMO+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2B05A46D21AC0EBD009BB1BB /* MeasurableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurableController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,14 +119,12 @@
 		2B05A40921A2C444009BB1BB /* gymTracker */ = {
 			isa = PBXGroup;
 			children = (
+				2B05A46021AA7305009BB1BB /* Views */,
+				2B05A45F21AA72F6009BB1BB /* Controllers */,
+				2B05A45E21AA72CF009BB1BB /* Extras */,
 				2B05A45721AA35B9009BB1BB /* Structs */,
-				2B05A44021A2C558009BB1BB /* Manager */,
+				2B05A44021A2C558009BB1BB /* Managers */,
 				2B05A43B21A2C45E009BB1BB /* CoreDataFiles */,
-				2B05A40A21A2C444009BB1BB /* AppDelegate.swift */,
-				2B05A40C21A2C444009BB1BB /* ViewController.swift */,
-				2B05A40E21A2C444009BB1BB /* Main.storyboard */,
-				2B05A41421A2C445009BB1BB /* Assets.xcassets */,
-				2B05A41621A2C445009BB1BB /* LaunchScreen.storyboard */,
 				2B05A41921A2C445009BB1BB /* Info.plist */,
 				2B05A41121A2C444009BB1BB /* gymTracker.xcdatamodeld */,
 			);
@@ -150,6 +152,8 @@
 		2B05A43B21A2C45E009BB1BB /* CoreDataFiles */ = {
 			isa = PBXGroup;
 			children = (
+				2B05A46921AC0B13009BB1BB /* MeasurementMO+CoreDataClass.swift */,
+				2B05A46A21AC0B13009BB1BB /* MeasurementMO+CoreDataProperties.swift */,
 				2B05A45A21AA6656009BB1BB /* MeasurableMO+CoreDataClass.swift */,
 				2B05A45B21AA6656009BB1BB /* MeasurableMO+CoreDataProperties.swift */,
 				2B05A45321AA3302009BB1BB /* ExerciseMO+CoreDataClass.swift */,
@@ -158,14 +162,14 @@
 			path = CoreDataFiles;
 			sourceTree = "<group>";
 		};
-		2B05A44021A2C558009BB1BB /* Manager */ = {
+		2B05A44021A2C558009BB1BB /* Managers */ = {
 			isa = PBXGroup;
 			children = (
 				2B05A44121A2C580009BB1BB /* ExerciseManager.swift */,
 				2B05A44321A2C5FE009BB1BB /* PersistenceManager.swift */,
 				2B05A44D21AA2C3D009BB1BB /* MeasurableManager.swift */,
 			);
-			path = Manager;
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		2B05A45721AA35B9009BB1BB /* Structs */ = {
@@ -174,6 +178,32 @@
 				2B05A45821AA360C009BB1BB /* Measurable.swift */,
 			);
 			path = Structs;
+			sourceTree = "<group>";
+		};
+		2B05A45E21AA72CF009BB1BB /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+				2B05A40A21A2C444009BB1BB /* AppDelegate.swift */,
+				2B05A41421A2C445009BB1BB /* Assets.xcassets */,
+			);
+			path = Extras;
+			sourceTree = "<group>";
+		};
+		2B05A45F21AA72F6009BB1BB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2B05A46D21AC0EBD009BB1BB /* MeasurableController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2B05A46021AA7305009BB1BB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2B05A40E21A2C444009BB1BB /* Measurable.storyboard */,
+				2B05A41621A2C445009BB1BB /* LaunchScreen.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,7 +312,7 @@
 			files = (
 				2B05A41821A2C445009BB1BB /* LaunchScreen.storyboard in Resources */,
 				2B05A41521A2C445009BB1BB /* Assets.xcassets in Resources */,
-				2B05A41021A2C444009BB1BB /* Main.storyboard in Resources */,
+				2B05A41021A2C444009BB1BB /* Measurable.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,15 +338,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B05A45C21AA6656009BB1BB /* MeasurableMO+CoreDataClass.swift in Sources */,
-				2B05A40D21A2C444009BB1BB /* ViewController.swift in Sources */,
 				2B05A44421A2C5FE009BB1BB /* PersistenceManager.swift in Sources */,
 				2B05A45921AA360C009BB1BB /* Measurable.swift in Sources */,
+				2B05A46E21AC0EBD009BB1BB /* MeasurableController.swift in Sources */,
 				2B05A45521AA3302009BB1BB /* ExerciseMO+CoreDataClass.swift in Sources */,
 				2B05A45621AA3302009BB1BB /* ExerciseMO+CoreDataProperties.swift in Sources */,
+				2B05A46B21AC0B13009BB1BB /* MeasurementMO+CoreDataClass.swift in Sources */,
 				2B05A41321A2C444009BB1BB /* gymTracker.xcdatamodeld in Sources */,
 				2B05A45D21AA6656009BB1BB /* MeasurableMO+CoreDataProperties.swift in Sources */,
 				2B05A44E21AA2C3D009BB1BB /* MeasurableManager.swift in Sources */,
 				2B05A44221A2C580009BB1BB /* ExerciseManager.swift in Sources */,
+				2B05A46C21AC0B13009BB1BB /* MeasurementMO+CoreDataProperties.swift in Sources */,
 				2B05A40B21A2C444009BB1BB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,12 +385,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2B05A40E21A2C444009BB1BB /* Main.storyboard */ = {
+		2B05A40E21A2C444009BB1BB /* Measurable.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				2B05A40F21A2C444009BB1BB /* Base */,
 			);
-			name = Main.storyboard;
+			name = Measurable.storyboard;
 			sourceTree = "<group>";
 		};
 		2B05A41621A2C445009BB1BB /* LaunchScreen.storyboard */ = {
