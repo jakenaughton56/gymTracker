@@ -8,14 +8,35 @@
 
 import UIKit
 
-class MeasurableController: UIViewController {
+class MeasurableController: UITableViewController {
+    
+    let measurableMgr = MeasurableManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationItem.title = "Measurables"
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add", style: .plain, target: self, action: #selector(addMeasurable))
+        
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "blah")
     }
     
-    @IBAction func addNewMeasurable() {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // TODO: switch measurable manager to handle count.
+        let measurableList = measurableMgr.fetchAll(orderByKey: "id")
+        return measurableList.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "blah", for: indexPath)
+        
+        let measurableList = measurableMgr.fetchAll(orderByKey: "name")
+        cell.textLabel?.text = measurableList[indexPath.row].name
+        return cell
+    }
+    
+    @objc func addMeasurable() {
         let addNewMeasurableAlert = UIAlertController(title: "Add New Measurable", message: nil, preferredStyle: .alert)
         addNewMeasurableAlert.addTextField { (newMeasurable) in
             newMeasurable.placeholder = "Enter name"
@@ -37,21 +58,11 @@ class MeasurableController: UIViewController {
             let newMeasurableAddedOkButton = UIAlertAction(title: "OK", style: .default, handler: nil)
             newMeasurableAddedAlert.addAction(newMeasurableAddedOkButton)
             self.present(newMeasurableAddedAlert, animated: true, completion: nil)
+            self.tableView.reloadData()
         }
         let newMeasurableCancelButton = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         addNewMeasurableAlert.addAction(newMeasurableSaveButton)
         addNewMeasurableAlert.addAction(newMeasurableCancelButton)
         present(addNewMeasurableAlert, animated: true, completion: nil)
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

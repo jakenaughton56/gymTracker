@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2B05A40B21A2C444009BB1BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B05A40A21A2C444009BB1BB /* AppDelegate.swift */; };
-		2B05A41021A2C444009BB1BB /* Measurable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B05A40E21A2C444009BB1BB /* Measurable.storyboard */; };
 		2B05A41321A2C444009BB1BB /* gymTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2B05A41121A2C444009BB1BB /* gymTracker.xcdatamodeld */; };
 		2B05A41521A2C445009BB1BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B05A41421A2C445009BB1BB /* Assets.xcassets */; };
 		2B05A41821A2C445009BB1BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B05A41621A2C445009BB1BB /* LaunchScreen.storyboard */; };
@@ -25,6 +24,8 @@
 		2B05A46B21AC0B13009BB1BB /* MeasurementMO+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B05A46921AC0B13009BB1BB /* MeasurementMO+CoreDataClass.swift */; };
 		2B05A46C21AC0B13009BB1BB /* MeasurementMO+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B05A46A21AC0B13009BB1BB /* MeasurementMO+CoreDataProperties.swift */; };
 		2B05A46E21AC0EBD009BB1BB /* MeasurableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B05A46D21AC0EBD009BB1BB /* MeasurableController.swift */; };
+		2B05A47221AD5C30009BB1BB /* MeasurableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B05A47121AD5C30009BB1BB /* MeasurableCell.swift */; };
+		2B05A47421BBD824009BB1BB /* MeasurableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B05A47321BBD824009BB1BB /* MeasurableView.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +48,6 @@
 /* Begin PBXFileReference section */
 		2B05A40721A2C444009BB1BB /* gymTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gymTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B05A40A21A2C444009BB1BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2B05A40F21A2C444009BB1BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Measurable.storyboard; sourceTree = "<group>"; };
 		2B05A41221A2C444009BB1BB /* gymTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = gymTracker.xcdatamodel; sourceTree = "<group>"; };
 		2B05A41421A2C445009BB1BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B05A41721A2C445009BB1BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -69,6 +69,8 @@
 		2B05A46921AC0B13009BB1BB /* MeasurementMO+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeasurementMO+CoreDataClass.swift"; sourceTree = "<group>"; };
 		2B05A46A21AC0B13009BB1BB /* MeasurementMO+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeasurementMO+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		2B05A46D21AC0EBD009BB1BB /* MeasurableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurableController.swift; sourceTree = "<group>"; };
+		2B05A47121AD5C30009BB1BB /* MeasurableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurableCell.swift; sourceTree = "<group>"; };
+		2B05A47321BBD824009BB1BB /* MeasurableView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MeasurableView.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				2B05A46D21AC0EBD009BB1BB /* MeasurableController.swift */,
+				2B05A47121AD5C30009BB1BB /* MeasurableCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -200,8 +203,8 @@
 		2B05A46021AA7305009BB1BB /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				2B05A40E21A2C444009BB1BB /* Measurable.storyboard */,
 				2B05A41621A2C445009BB1BB /* LaunchScreen.storyboard */,
+				2B05A47321BBD824009BB1BB /* MeasurableView.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -311,8 +314,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B05A41821A2C445009BB1BB /* LaunchScreen.storyboard in Resources */,
+				2B05A47421BBD824009BB1BB /* MeasurableView.storyboard in Resources */,
 				2B05A41521A2C445009BB1BB /* Assets.xcassets in Resources */,
-				2B05A41021A2C444009BB1BB /* Measurable.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +340,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B05A47221AD5C30009BB1BB /* MeasurableCell.swift in Sources */,
 				2B05A45C21AA6656009BB1BB /* MeasurableMO+CoreDataClass.swift in Sources */,
 				2B05A44421A2C5FE009BB1BB /* PersistenceManager.swift in Sources */,
 				2B05A45921AA360C009BB1BB /* Measurable.swift in Sources */,
@@ -385,14 +389,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2B05A40E21A2C444009BB1BB /* Measurable.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2B05A40F21A2C444009BB1BB /* Base */,
-			);
-			name = Measurable.storyboard;
-			sourceTree = "<group>";
-		};
 		2B05A41621A2C445009BB1BB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

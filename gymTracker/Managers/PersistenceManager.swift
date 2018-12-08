@@ -40,9 +40,10 @@ final class PersistenceManager {
         }
     }
     
+    // TODO: add orderBy parameter (see fetchAll)
     func fetch<T: NSManagedObject>(_ objectType: T.Type, predicate: NSPredicate) -> [T] {
         let objectString = String(describing: objectType)
-        let entityName = objectString.replacingOccurrences(of: "MO", with: "")
+        let entityName = fixEntityName(objectString)
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: entityName)
         fetchRequest.predicate = predicate
         
@@ -55,10 +56,11 @@ final class PersistenceManager {
         }
     }
     
-    func fetchAll<T: NSManagedObject>(_ objectType: T.Type) -> [T] {
+    func fetchAll<T: NSManagedObject>(_ objectType: T.Type, orderBy: [NSSortDescriptor]) -> [T] {
         let objectString = String(describing: objectType)
-        let entityName = objectString.replacingOccurrences(of: "MO", with: "")
+        let entityName = fixEntityName(objectString)
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: entityName)
+        fetchRequest.sortDescriptors = orderBy
         
         do {
             let fetchedObjects = try context.fetch(fetchRequest) as? [T]
@@ -67,5 +69,9 @@ final class PersistenceManager {
             print(Error.self)
             fatalError("Failed to fetch object")
         }
+    }
+    
+    private func fixEntityName(_ entityName: String) -> String {
+        return entityName.replacingOccurrences(of: "MO", with: "")
     }
 }

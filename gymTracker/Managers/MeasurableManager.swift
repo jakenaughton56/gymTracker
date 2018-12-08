@@ -41,6 +41,15 @@ class MeasurableManager {
         return self.convertModelArrayToStructArray(measurables)
     }
     
+    func fetchAll(orderByKey: String, ascending: Bool = true) -> [MeasurableStruct] {
+        let orderBy = [NSSortDescriptor(key: orderByKey, ascending: ascending, selector: #selector(NSString.caseInsensitiveCompare(_:)))]
+        let measurables = persistenceManager.fetchAll(MeasurableMO.self, orderBy: orderBy)
+        if measurables.count == 0 {
+            return [MeasurableStruct]()
+        }
+        return self.convertModelArrayToStructArray(measurables)
+    }
+    
     private func convertModelArrayToStructArray(_ measurableMO: [MeasurableMO]) -> [MeasurableStruct] {
         if measurableMO.count == 0 {
             fatalError("Trying to convert empty array")
